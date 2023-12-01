@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/e81773e2de.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation">
+            <div class="logo">
+                <div class="text">
+                    <a href="#">Restaurant</a>
+                    <p>Eat / Save it</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="#" onclick="gulugulu()">Home</a>
+                <a href="#kedua" onclick="gulugulu()">About us</a>
+                <a href="#ketiga" onclick="gulugulu()">More</a>
+                <a href="#terakhir" onclick="gulugulu()">Contact us</a>
+            </nav>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-square-phone">+62-123-456-789</i></a>
+            </div>
+
+            <div class="box">
+                <div class="bars" onclick="gulugulu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="heading">
+            <!-- <img src="assets/background-awal.jpg" alt=""> -->
+            <div class="text">
+                <div class="content">
+                    <div class="title">
+                        <h1>Taste the best Indonesian food with <span>Restaurant</span></h1>
+                    </div>
+
+                    <div class="detail">
+                        <div class="tl">
+                            <i class="fa-regular fa-clock">09:00-20-00</i>
+                            <i class="fa-solid fa-location-dot">Batam</i>
+                        </div>
+                        <a href="#">Look menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="kedua">
+            <div class="box">
+                <div class="content">
+                    <div class="image-box">
+                        <img src="assets/restaurant.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>About us</h2>
+                        <p>A restaurant founded in 1990 by two brothers with a variety of menus and with the aim that everyone can taste the delicious cooking of their mothers.</p>
+                        <p>
+                            <br>
+                            We are waiting for you every day from 09:00 to 20:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why" id="ketiga">
+            <h2>Why choose us?</h2>
+            <div class="container">
+
+
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-regular fa-snowflake"></i>
+                        <p>We have frozen food and easy cooking</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>cheap</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Fast deliver</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="list-menu">
+            <div class="container">
+                <h2>Our menu:</h2>
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openMenu(event, 'meat')">Meat</button>
+                    <button class="tablinks" onclick="openMenu(event, 'nasi')">Rice</button>
+                    <button class="tablinks" onclick="openMenu(event, 'mie')">Noodles</button>
+                </div>
+
+                <div class="tabcontent" id="meat" style="display: flex;">
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/rendang.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Rendang</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 18.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/bakso.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bakso</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 18.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/sate.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Sate sapi/kambing</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 15.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent" id="nasi">
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/nasiGoreng.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Nasi goreng kambing</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 20.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/nasiKuning.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Nasi kuning</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 15.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/nasiUduk.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Nasi uduk</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 15.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabcontent" id="mie">
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/miGorang.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Mi goreng</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 15.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/mieKuah.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Mi kuah</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 15.000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="image-box">
+                            <img src="assets/mieAyam.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="title">Mi ayam</div>
+                            <div class="detail">
+                                <div class="rating"><i class="fa-solid fa-star">= 4.5</i></div>
+                                <div class="price">RP 20.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>And other menu</h2>
+
+            <marquee behavior="scroll" scrollamount="10" direction="right" width="100%">
+                <div class="content">
+                    
+                        <img src="assets/bakso.jpg" alt="bakso">
+                    
+                    
+                        <img src="assets/boba.jpg" alt="boba">
+                    
+                    
+                        <img src="assets/mieAyam.jpg" alt="Mie ayam">
+                    
+                    
+                        <img src="assets/jus.jpg" alt="jus">
+                    
+                    
+                        <img src="assets/mieKuah.jpg" alt="Mie kuah">
+                    
+                    
+                        <img src="assets/es Campur.jpg" alt="Es campur">
+                    
+                    
+                        <img src="assets/miGorang.jpg" alt="Mi goreng">
+                    
+                    
+                        <img src="assets/cappucino.jpg" alt="Cappucino">
+                    
+                    
+                        <img src="assets/nasiGoreng.jpg" alt="Nasi goreng">
+                    
+                    
+                        <img src="assets/piangIjo.jpg" alt="Es pisang ijo">
+                    
+                    
+                        <img src="assets/nasiGoreng.jpg" alt="Nasi goreng">
+                    
+                    
+                        <img src="assets/teh.jpg" alt="Es teh">
+                    
+                </div>
+            </marquee>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="terakhir">
+        <div class="first-footer">
+            <form action="">
+                <div class="forum">
+                    <label for="Nama">Enter your name</label>
+                    <input type="text" id="Nama">
+                </div>
+
+                <div class="forum">
+                    <label for="Nomor">Enter your phone number</label>
+                    <input type="text" id="Nomor">
+                </div>
+
+                <div class="forum">
+                    <label for="pesan">Message</label>
+                    <textarea name="" id="pesan" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            <div class="detail">
+                <h1>Contact us!</h1>
+
+                <div class="phone">
+                    <h4>Phone & gmail:</h4><br>
+                    <p>+62-123-456-789</p>
+                    <br>
+                    <p>restaurant@gmail.com</p>
+                </div>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-square-facebook">Restaurant</i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram">@Restaurant</i></a>
+                </div>
+
+                <div class="jadwal">
+                    <p>schedule:</p>
+                    <br>
+                    <p>09:00 to 20:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="second-footer">
+            <h1>Copyright &copy 2023 Restaurant. All Rights Reserved</h1>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
