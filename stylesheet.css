@@ -272,6 +272,7 @@
 .heading .detail a:hover {
     border-color: #FFD700;
     color: #FFD700;
+    letter-spacing: .1em;
 }
 
 @media screen and (max-width: 810px) {
@@ -511,7 +512,7 @@
 
 /* MENU-LIST */
 .list-menu {
-    padding: 200px 0;
+
     background-image: url(assets/sugar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
